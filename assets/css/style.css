@@ -1,0 +1,119 @@
+/*css reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*css declarations*/
+body {
+	background-image: url(../images/bg.jpeg);
+	background-position: center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+	color: #f2f2f2; /*off white*/
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+}
+
+[class*="col-"] {
+	border: 5px solid transparent;
+	/*border: 3px solid black;*/
+	/*float: left;*/
+}
+
+.container {
+	max-width: 960px; /*so that the layout wont expand extensively in very wide displays*/
+	margin: 0 auto;
+}
+
+.header {
+	height: 100px;
+	text-align: right;
+	position: relative;
+}
+
+.navheader {
+	position: absolute;
+	bottom: 40%;
+	right: 0;
+}
+
+.navlinks {
+	text-decoration: none;
+	color: #f8f9fa;
+	letter-spacing: 1px;
+	padding-bottom: 3px;
+	margin: 0px 0px 25px 25px;
+}
+
+.navlinks:hover {
+	text-decoration: none;
+	color: #f8f9fa;
+	border-bottom: 1px solid #f8f9fa;
+}
+
+.main {
+	min-height: 550px;
+}
+
+.landingleft {
+	padding-top: 20px;
+}
+
+#idrad {
+	height: 200px;
+	width: 215px;
+	border-radius: 50%; /*makes the photo round*/
+}
+
+#radlogolanding {
+	height: 150px;
+	width: 150px;
+}
+
+#landingform {
+	background-color: rgba(92,184,92, 0.7); /*bootstrap green*/
+	border-radius: 10px;
+	padding: 20px;
+}
+
+/*.footerlanding {
+	min-height: 50px;
+	bottom: 0;
+}
+
+.smaller {
+	font-size: 10px;
+}*/
+
+.nav-active {
+	border-bottom: 1px solid #f8f9fa;
+}
+
+.jumbotron {
+	background-color: rgba(233, 236, 239, 0.7);
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
