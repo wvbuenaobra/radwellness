@@ -17,11 +17,16 @@ body {
 	color: #f2f2f2; /*off white*/
 	height: 100vh;
 	font-family: 'Open Sans', sans-serif;
+	/*background-attachment: fixed;*/ /*to achieve parallax effect*/
+}
+
+.txt-bl {
+	color: black;
 }
 
 [class*="col-"] {
 	border: 5px solid transparent;
-	/*border: 3px solid black;*/
+	/*border: 3px solid yellow;*/
 	/*float: left;*/
 }
 
@@ -81,26 +86,64 @@ body {
 	padding: 20px;
 }
 
-/*.footerlanding {
-	min-height: 50px;
-	bottom: 0;
-}
-
-.smaller {
-	font-size: 10px;
-}*/
-
 .nav-active {
 	border-bottom: 1px solid #f8f9fa;
 }
 
 .jumbotron {
-	background-color: rgba(233, 236, 239, 0.7);
+	background-color: rgba(233, 236, 239, 0.9);
 	color: black;
+	padding: 2.5rem 3rem;
 }
 
+.testimonials-section {
+	min-height: 200px;
+}
 
+.card-tes {
+	height: 100%;
+	background-color: #669999;
+}
 
+#client-pos {
+	color: black;
+	font-size: 12px;
+	float: left;
+}
+
+#client-tes {
+	color: black;
+	font-size: 11px;
+	float: right;
+}
+
+#client-pic {
+	height: 60px;
+	width: 60px;
+	border: 1px solid #333;
+	border-radius: 2px;
+	margin-right: 5px;
+	padding: 3px;
+	float: left;
+}
+
+.pic-who {
+	height: 100px;
+	width: 100px;
+}
+
+.connect {
+	background-color: rgba(233, 236, 239, 0.9);
+	border-radius: 10px;
+	padding:15px;
+	min-height: 130px;
+}
+
+.social-icon {
+	height: 45px;
+	width: 45px;
+	margin: 0 10px;
+}
 
 
 
