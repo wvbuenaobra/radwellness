@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-	<title>RADify Wellness - Programs</title>
+	<title>RAD Wellness - Programs</title>
 
 	<!-- fontawesome icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- animate.css -->
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -26,24 +26,51 @@
 	<link rel="icon" type="image/gif/png" href="assets/images/letter.jpg">
 </head>
 <body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+	<!-- Nav for Mobile -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-success" id="nav-mbl">
+		<a class="navbar-brand" href="home.html">
+			<i class="fas fa-circle fa-xs"></i> RAD Wellness
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navbar-nav" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="programs.html">Programs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Nav for Mobile -->
+
 	<div class="container">
 		
+		<!-- Nav for Desktop -->
 		<!-- start header row -->
-		<nav class="row header">
+		<nav class="row header" id="nav-lg">
 			<div class="navheader col-lg-12">
-				<!-- <button type="button" class="btn btn-outline-light btn-sm mx-2">HOME</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">WHO WE ARE</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">WHAT WE DO</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">PROGRAMS</button>
-				<button type="button" class="btn btn-outline-light btn-sm">CONTACT US</button> -->
 				<a href="home.html" class="navlinks">ABOUT US</a>
-				<!-- <a href="#" class="navlinks">WHO WE ARE</a>
-				<a href="#" class="navlinks">WHAT WE DO</a> -->
 				<a href="programs.html" class="navlinks nav-active">PROGRAMS</a>
 				<a href="gallery.html" class="navlinks">GALLERY</a>
 				<a href="contact.html" class="navlinks">CONTACT US</a>
 			</div>
 		</nav> <!-- end header row -->
+		<!-- Nav for Desktop -->
 
 		<!-- start main row -->
 		<main class="row main2">
@@ -52,29 +79,32 @@
 				<div class="row">
 
 					<!-- PROGRAMS START -->
-					<div class="landingleft col-lg-12">
-
+					<div class="landingleft col-lg-12 add-padding1">
 						<p class="text-center"><img id="idrad" src="assets/images/radify-logo.jpg"></p>
-						<!-- <div class="mb-4 text-center prog-title"><h3>PROGRAM OFFERINGS</h3></div> -->
-
-						<!-- <p class="text-center">
-							<a href="#"><button type="button" class="btn btn-success btn-lg inactive">Program Offerings</button></a>
-						</p> -->
 					</div> 
 
-					<div class="col-lg-12">
+					<div class="col-lg-12 add-padding2">
 						<div class="text-center">
 
 							<h2 class="pb-3">PROGRAM OFFERINGS:</h2>
 							
 							<a href="#prog1" class="sub-prog">
-								<h3>&#9675; Training Programs <i class="fas fa-arrow-circle-right"></i></h3>
+								<h3 class="sub-prog-text">
+									&#9675; Training Programs 
+									<i class="fas fa-arrow-circle-right animated fadeInLeft delay-1s faster"></i>
+								</h3>
 							</a>
 							<a href="#prog2" class="sub-prog">
-								<h3>&#9675; Psychological Interventions <i class="fas fa-arrow-circle-right"></i></h3>
+								<h3 class="sub-prog-text">
+									&#9675; Psychological Interventions 
+									<i class="fas fa-arrow-circle-right animated fadeInLeft delay-2s faster"></i>
+								</h3>
 							</a>
 							<a href="#prog3" class="sub-prog">
-								<h3>&#9675; Employee Wellness Program <i class="fas fa-arrow-circle-right"></i></h3>
+								<h3 class="sub-prog-text">
+									&#9675; Employee Wellness Program 
+									<i class="fas fa-arrow-circle-right animated fadeInLeft delay-3s faster"></i>
+								</h3>
 							</a>
 								
 						</div>
@@ -87,10 +117,6 @@
 		</main>
 		<!-- end main row -->
 
-		<!-- <footer class="footer bg-success">
-			<p class="text-center mb-0 p-3">&copy; RAD Wellness 2018, All rights reserved</p>
-		</footer> -->
-
 	</div> <!-- end container -->
 
 
@@ -98,7 +124,7 @@
 	<div class="container">
 		<div class="row">
 
-			<div id="prog1" class="col-lg-12 text-center txt-bl mt-5">
+			<div id="prog1" class="col-lg-12 text-center txt-bl add-margin">
 				<h3>Training Programs</h3>
 			</div>
 
@@ -108,12 +134,12 @@
 				<img src="assets/images/inhouse.jpeg" class="w-100">
 			</div>
 			<div class="col-lg-8 txt-bl">
-				<p><strong>1. In-house Programs</strong></p>
-				<p>Aligned to RAD’s objective of bringing mental health awareness to different organizations and companies, our In-house programs offer psychoeducational learning experiences that is customized to the needs of the employees, which aims to educate and equip the organization for a more resilient and productive workforce.</p>
+				<p class="jumbo-lead"><strong>1. In-house Programs</strong></p>
+				<p class="jumbo-lead">Aligned to RAD’s objective of bringing mental health awareness to different organizations and companies, our In-house programs offer psychoeducational learning experiences that is customized to the needs of the employees, which aims to educate and equip the organization for a more resilient and productive workforce.</p>
 
-				<p>This type of program is designed for organizations and companies that:</p>
+				<p class="jumbo-lead">This type of program is designed for organizations and companies that:</p>
 
-				<ul class="pl-4">
+				<ul class="pl-4 jumbo-lead">
 					<li><em>Are looking for customized mental health learning programs for their employees</em></li>
 					<li><em>Prefer their training programs done in their chosen venue, location, schedule, and budget</em></li>
 				</ul>
@@ -125,12 +151,12 @@
 				<img src="assets/images/public.jpeg" class="w-100">
 			</div>
 			<div class="col-lg-8 txt-bl">
-				<p><strong>2. Public Seminars</strong></p>
-				<p>RAD’s ultimate goal is to reach each and every individual and educate them on mental wellness. Our public learning offerings aim to offer quality learning experiences that would focus on relevant topics on mental health and equip individuals on skills that are practical and useful.</p>
+				<p class="jumbo-lead"><strong>2. Public Seminars</strong></p>
+				<p class="jumbo-lead">RAD’s ultimate goal is to reach each and every individual and educate them on mental wellness. Our public learning offerings aim to offer quality learning experiences that would focus on relevant topics on mental health and equip individuals on skills that are practical and useful.</p>
 
-				<p>This type of program is recommended for:</p>
+				<p class="jumbo-lead">This type of program is recommended for:</p>
 
-				<ul class="pl-4">
+				<ul class="pl-4 jumbo-lead">
 					<li><em>Individual who is either from an organization/company or not, who is interested to take our learning program</em></li>
 					<li><em>Organizations / companies who have 1 to 10 learners who would want to attend a learning program</em></li>
 					<li><em>Individuals who would like to meet other learners</em></li>
@@ -150,8 +176,8 @@
 				<img src="assets/images/individual.jpeg" class="w-100">
 			</div>
 			<div class="col-lg-8 txt-bl">
-				<p><strong>1. Group Counseling</strong></p>
-				<p>RAD has a pool of professional counselors and health care providers who had the expertise to facilitate group counseling sessions for individuals whether coming from one organization/company or from a diverse background.</p>
+				<p class="jumbo-lead"><strong>1. Group Counseling</strong></p>
+				<p class="jumbo-lead">RAD has a pool of professional counselors and health care providers who had the expertise to facilitate group counseling sessions for individuals whether coming from one organization/company or from a diverse background.</p>
 			</div>
 			
 			<div class="col-lg-12"><hr></div>
@@ -160,8 +186,8 @@
 				<img src="assets/images/group.jpeg" class="w-100">
 			</div>
 			<div class="col-lg-8 txt-bl">
-				<p><strong>2. Individual Counseling</strong></p>
-				<p>In addition to RAD’s expertise of offering preventive psychoeducational learning sessions, the team has gained expertise in conducting counseling services both one-on-one counseling and online platforms. This is to ensure to meet the preference, availability, and needs of the client.</p>
+				<p class="jumbo-lead"><strong>2. Individual Counseling</strong></p>
+				<p class="jumbo-lead">In addition to RAD’s expertise of offering preventive psychoeducational learning sessions, the team has gained expertise in conducting counseling services both one-on-one counseling and online platforms. This is to ensure to meet the preference, availability, and needs of the client.</p>
 			</div>
 
 			<div class="col-lg-12"><hr class="bg-success"></div>
@@ -176,7 +202,7 @@
 				<img src="assets/images/employee.jpeg" class="w-100">
 			</div>
 			<div class="col-lg-8 txt-bl">
-				RAD offers a complete wellness program for an organization that aims to promote and create a mentally well and healthy workforce. Programs may include learning sessions, application-based programs, chatbot and real-person healthcare providers, workshops, exercises and the like.
+				<p class="jumbo-lead">RAD offers a complete wellness program for an organization that aims to promote and create a mentally well and healthy workforce. Programs may include learning sessions, application-based programs, chatbot and real-person healthcare providers, workshops, exercises and the like.</p>
 			</div>
 
 			<div class="py-1">&nbsp;</div>
@@ -187,10 +213,13 @@
 
 		</div> <!-- end of row -->
 
+	</div>
+
+
+	<div>
 		<footer class="footer bg-success">
 			<p class="text-right mb-0 p-2 footertxt">&copy; RAD Wellness 2018, All rights reserved.</p>
 		</footer>
-
 	</div>
 
 
@@ -199,5 +228,24 @@
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		        document.getElementById("myBtn").style.display = "block";
+		    } else {
+		        document.getElementById("myBtn").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0;
+		    document.documentElement.scrollTop = 0;
+		}
+	</script>
 </body>
 </html>

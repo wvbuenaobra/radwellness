@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-	<title>RADify Wellness - About Us</title>
+	<title>RAD Wellness - About Us</title>
 
 	<!-- fontawesome icons -->
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- animate.css -->
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.css"> -->
@@ -25,25 +25,52 @@
 	<!-- fav icon -->
 	<link rel="icon" type="image/gif/png" href="assets/images/letter.jpg">
 </head>
-<body>
+<body id="if-fixed">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+	<!-- Nav for Mobile -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-success" id="nav-mbl">
+		<a class="navbar-brand" href="home.html">
+			<i class="fas fa-circle fa-xs"></i> RAD Wellness
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navbar-nav" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link active" href="home.html">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="programs.html">Programs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Nav for Mobile -->
+
 	<div class="container">
 		
+		<!-- Nav for Desktop -->
 		<!-- start header row -->
-		<nav class="row header">
+		<nav class="row header" id="nav-lg">
 			<div class="navheader col-lg-12">
-				<!-- <button type="button" class="btn btn-outline-light btn-sm mx-2">HOME</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">WHO WE ARE</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">WHAT WE DO</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">PROGRAMS</button>
-				<button type="button" class="btn btn-outline-light btn-sm">CONTACT US</button> -->
 				<a href="home.html" class="navlinks nav-active">ABOUT US</a>
-				<!-- <a href="#" class="navlinks">WHO WE ARE</a>
-				<a href="#" class="navlinks">WHAT WE DO</a> -->
 				<a href="programs.html" class="navlinks">PROGRAMS</a>
 				<a href="gallery.html" class="navlinks">GALLERY</a>
 				<a href="contact.html" class="navlinks">CONTACT US</a>
 			</div>
 		</nav> <!-- end header row -->
+		<!-- Nav for Desktop -->
 
 		<!-- start main row -->
 		<main class="row main">
@@ -51,14 +78,13 @@
 			<!-- JUMBOTRON SECTION -->
 			<section class="jumbotron-section">
 				
-				<!-- <p class="text-center"><img id="idrad" src="assets/images/radify-logo.jpg"></p> -->
 				<div class="jumbotron col-lg-12">
 
-					<!-- <img id="idrad" src="assets/images/radify-logo.jpg"> -->
-					<h1 class="display-4">Reframe. Affirm. Develop.</h1>
-				  	<p class="lead text-justify">RADify Wellness is a team of young professionals - counselors, psychologists, human resource and business professionals - who are advocates of mental health. Through our years in the industry, we have gained expertise in the corporate, educational and community sectors and have strengthened our passion to help groups and individuals through various mental health intervention and programs.</p>
+					<h1 class="display-4 reframe-tag">Reframe. Affirm. Develop.</h1>
+
+				  	<p class="lead jumbo-lead">RAD Wellness is a team of young professionals - counselors, psychologists, human resource and business professionals - who are advocates of mental health. Through our years in the industry, we have gained expertise in the corporate, educational and community sectors and have strengthened our passion to help groups and individuals through various mental health intervention and programs.</p>
 				  	<!-- <hr class="my-4"> -->
-				  	<!-- <p>RADify Wellness is a team of young professionals - counselors, psychologists, human resource and business professionals - who are advocates of mental health. Through our years in the industry, we have gained expertise in the corporate, educational and community sectors and have strengthened our passion to help groups and individuals through various mental health intervention and programs.</p> -->
+				  	<!-- <p>RAD Wellness is a team of young professionals - counselors, psychologists, human resource and business professionals - who are advocates of mental health. Through our years in the industry, we have gained expertise in the corporate, educational and community sectors and have strengthened our passion to help groups and individuals through various mental health intervention and programs.</p> -->
 				  	<p class="lead">
 				    	<a class="btn btn-success btn-lg" href="programs.html" role="button">Our Programs</a>
 				  	</p>
@@ -72,14 +98,14 @@
 			<!-- TESTIMONIALS SECTION -->
 			<section class="container testimonials-section">
 				<div class="row">
-					<div class="col-lg-12 text-center"><h4>#RedefineWellnessWithRAD</h4></div>					
+					<div class="col-lg-12 text-center"><h4 class="hashtag">#RedefineWellnessWithRAD</h4></div>					
 					<div class="col-lg-3">
 						<div class="card card-tes">
 						  	<div class="card-body">
 						  		<h5 class="card-title" id="client-pos"><strong>Carlo Martinez,</strong> <em>Customer Service Associate</em></h5>
 						    	<p class="card-text" id="client-tes">
 						    		<img src="assets/images/client-1.jpg" alt="Client Testimonial 1" id="client-pic">
-						    		"For years, I have been struggling on how to manage my stress at work and how to maintain work-life balance. RADify Wellness taught me the importance of taking care of one's full well-being. Especially mental health."
+						    		"For years, I have been struggling on how to manage my stress at work and how to maintain work-life balance. RAD Wellness taught me the importance of taking care of one's full well-being. Especially mental health."
 						    	</p>
 						  	</div>
 						</div>
@@ -90,7 +116,7 @@
 						  		<h5 class="card-title" id="client-pos"><strong>Mary Ann D. Pacifico,</strong> <em>Lawyer</em></h5>
 						    	<p class="card-text" id="client-tes">
 						    		<img src="assets/images/client-2.jpg" alt="Client Testimonial 2" id="client-pic">
-						    		"Office politics is an ongoing problem for me. That, on top of endless workload. RADify's intervention programs helped me deal with toxic people and toxic situations and I have to say the quality of my work days have improved."
+						    		"Office politics is an ongoing problem for me. That, on top of endless workload. RAD's intervention programs helped me deal with toxic people and toxic situations and I have to say the quality of my work days have improved."
 						    	</p>
 						  	</div>
 						</div>
@@ -101,7 +127,7 @@
 						  		<h5 class="card-title" id="client-pos"><strong>Geraldine M. Chua,</strong> <em>Guidance Counselor</em></h5>
 						    	<p class="card-text" id="client-tes">
 						    		<img src="assets/images/client-3.jpg" alt="Client Testimonial 3" id="client-pic">
-						    		"There really is a social stigma surrounding mental health, causing people to look past through it, unaware of it's importance. I believe that mental health is as essential as taking care of your heart or your sugar levels. I'm glad about RADify's advocacy and I hope their message reaches a lot of people!"
+						    		"There really is a social stigma surrounding mental health, causing people to look past through it, unaware of it's importance. I believe that mental health is as essential as taking care of your heart or your sugar levels. I'm glad about RAD's advocacy and I hope their message reaches a lot of people!"
 						    	</p>
 						  	</div>
 						</div>
@@ -112,7 +138,7 @@
 						  		<h5 class="card-title" id="client-pos"><strong>Jiro Cayago,</strong> <em>Manager</em></h5>
 						    	<p class="card-text" id="client-tes">
 						    		<img src="assets/images/client-4.jpg" alt="Client Testimonial 4" id="client-pic">
-						    		"It's hard to stay on top of things when you have to wear many hats - at work I lead a team of people, at home I take care of my parents and siblings, and I'm also a single father. But RADify's programs have helped me achieve more peace and focus. Everyday is a chance to improve my relationships with people, including myself."
+						    		"It's hard to stay on top of things when you have to wear many hats - at work I lead a team of people, at home I take care of my parents and siblings, and I'm also a single father. But RAD's programs have helped me achieve more peace and focus. Everyday is a chance to improve my relationships with people, including myself."
 						    	</p>
 						  	</div>
 						</div>
@@ -129,8 +155,8 @@
 				<div class="row">
 					
 					<div class="col-lg-12">
-						<div class="mt-5 mb-4">
-							<h3 class="txt-bl">WHO WE ARE</h3>
+						<div class="mt-4 mb-4">
+							<h3 class="txt-bl txt-wht-center">WHO WE ARE</h3>
 						</div>
 					</div>
 
@@ -143,7 +169,7 @@
 						    	<div class="picholder">
 						    		<img src="assets/images/angel.jpeg" alt="Angel Aniag" class="pic-who">
 						        </div>
-						        <div>
+						        <div class="bioholder">
 							        <h4 class="card-title"><strong>Angel Aniag</strong></h4>
 							        <div>
 							        	<p class="card-text">
@@ -161,7 +187,7 @@
 						    <div class="w-100"></div>
 						</div>
 					</div>
-					<div class="col-lg-12 txt-bl mb-4">
+					<div class="col-lg-12 txt-bl mb-3">
 						<div class="card flex-row flex-wrap">
 							<!-- <div class="card-header border-0">
 						        <img src="assets/images/client1.png" alt="Doreen Flores" class="pic-who">
@@ -170,7 +196,7 @@
 						    	<div class="picholder">
 						    		<img src="assets/images/doreen.jpeg" alt="Doreen Flores" class="pic-who">
 						        </div>
-						        <div>
+						        <div class="bioholder">
 							        <h4 class="card-title"><strong>Doreen Flores</strong></h4>
 							        <div>
 							        	<p class="card-text">
@@ -200,7 +226,7 @@
 				<div class="row">
 					
 					<div class="col-lg-6 txt-bl text-center">
-						<h4><strong>Aikka Hisus</strong></h4>
+						<h4 class="txt-wht-center"><strong>Aikka Hisus</strong></h4>
 						<div class="fade-container">
 						  	<img src="assets/images/aikka.jpeg" alt="Aikka Hisus" class="fade-image">
 						  	<div class="fade-overlay">
@@ -212,7 +238,7 @@
 					</div>
 
 					<div class="col-lg-6 txt-bl text-center">
-						<h4><strong>Rhye de Guia</strong></h4>
+						<h4 class="txt-wht-center"><strong>Rhye de Guia</strong></h4>
 						<div class="fade-container">
 						  	<img src="assets/images/rhye.jpeg" alt="Rhye de Guia" class="fade-image">
 						  	<div class="fade-overlay">
@@ -234,21 +260,21 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="mt-5 pb-3">
-							<h3 class="txt-bl">WHAT WE DO</h3>
+							<h3 class="txt-bl txt-wht-center">WHAT WE DO</h3>
 						</div>
 					</div>
 
 					<div class="col-lg-12 txt-bl mb-4">
-						<p class="makeblue text-center adjustlh"><strong>
+						<p class="makeblue text-center adjustlh makewht"><strong>
 							We design and implement complete wellness programs that include various methods such as <span class="underline">seminars</span>, <span class="underline">workshops</span>, and <span class="underline">professional counseling</span>.
 						</strong></p>
-						<p class="text-center adjustlh">
+						<p class="text-center adjustlh makewht">
 							These programs <strong>give importance to the needs, preferences, and availability of the clients.</strong> We also ensure that these programs are preventive, developmental, and remedial in nature to guarantee that we are <strong>holistic</strong> in our approach. We all make these possible by merging <strong>traditional</strong> and <strong>technology-driven methodologies</strong> in our interventions such as <strong>online counseling, application-based programs, and chatbots.</strong>
 						</p>
 					</div>
 
 					<div class="col-lg-12 text-center mb-5">
-						<a href="programs.html"><button type="button" class="btn btn-success btn-lg">Learn More About Our Programs</button></a>
+						<a href="programs.html"><button type="button" class="btn btn-success btnsize">Learn More About Our Programs</button></a>
 					</div>
 				</div>
 			</section>
@@ -257,11 +283,14 @@
 		</main>
 		<!-- end main row -->
 
+	</div> <!-- end container -->
+
+
+	<div>
 		<footer class="footer bg-success">
 			<p class="text-right mb-0 p-2 footertxt">&copy; RAD Wellness 2018, All rights reserved.</p>
 		</footer>
-
-	</div> <!-- end container -->
+	</div>
 
 
 	<!-- Optional JavaScript -->
@@ -269,5 +298,24 @@
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		        document.getElementById("myBtn").style.display = "block";
+		    } else {
+		        document.getElementById("myBtn").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0;
+		    document.documentElement.scrollTop = 0;
+		}
+	</script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-	<title>RADify Wellness - Contact Us</title>
+	<title>RAD Wellness - Contact Us</title>
 
 	<!-- fontawesome icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -25,25 +25,52 @@
 	<!-- fav icon -->
 	<link rel="icon" type="image/gif/png" href="assets/images/letter.jpg">
 </head>
-<body>
+<body id="if-fixed">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+	<!-- Nav for Mobile -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-success" id="nav-mbl">
+		<a class="navbar-brand" href="home.html">
+			<i class="fas fa-circle fa-xs"></i> RAD Wellness
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navbar-nav" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="programs.html">Programs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Nav for Mobile -->
+
 	<div class="container">
 		
+		<!-- Nav for Desktop -->
 		<!-- start header row -->
-		<nav class="row header">
+		<nav class="row header" id="nav-lg">
 			<div class="navheader col-lg-12">
-				<!-- <button type="button" class="btn btn-outline-light btn-sm mx-2">HOME</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">WHO WE ARE</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">WHAT WE DO</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">PROGRAMS</button>
-				<button type="button" class="btn btn-outline-light btn-sm">CONTACT US</button> -->
 				<a href="home.html" class="navlinks">ABOUT US</a>
-				<!-- <a href="#" class="navlinks">WHO WE ARE</a>
-				<a href="#" class="navlinks">WHAT WE DO</a> -->
 				<a href="programs.html" class="navlinks">PROGRAMS</a>
 				<a href="gallery.html" class="navlinks">GALLERY</a>
 				<a href="contact.html" class="navlinks nav-active">CONTACT US</a>
 			</div>
 		</nav> <!-- end header row -->
+		<!-- Nav for Desktop -->
 
 		<!-- start main row -->
 		<main class="row main">
@@ -52,19 +79,24 @@
 				<div class="row">
 
 					<!-- CONNECT -->
-					<div class="col-lg-6">
+					<div class="col-lg-6 connect-mg-top connect-mg-btm">
 						<div class="connect txt-bl">
-							<h3>CONNECT</h3>
-							<div class="pl-4"><i class="fas fa-mobile-alt"></i> +63 917 555 7779 | <i class="fas fa-phone"></i> (02) 888 0234</div>
-							<div class="pl-4"><i class="far fa-envelope"></i> radifywellness@gmail.com</div>
+							<h4>CONNECT</h4>
+							<div class="text-center connect-text">
+								<i class="fas fa-mobile-alt"></i> 
+								+63 917 555 7779 | <i class="fas fa-phone"></i> (02) 888 0234
+							</div>
+							<div class="text-center connect-text">
+								<i class="far fa-envelope"></i> radwellness@gmail.com
+							</div>
 						</div>
 					</div>
 					<!-- CONNECT -->
 
 					<!-- SOCIAL -->
 					<div class="col-lg-6">
-						<div class="connect txt-bl">
-							<h3>SOCIAL MEDIA</h3>
+						<div class="connect txt-bl connect-mg-btm">
+							<h4>SOCIAL MEDIA</h4>
 
 							<p class="text-center">
 								<a href="https://www.facebook.com" target="_blank">
@@ -76,39 +108,38 @@
 								<a href="https://www.instagram.com" target="_blank">
 									<img src="assets/images/instagram.png" alt="Instagram" class="social-icon">
 								</a>
-								<!-- <img src="assets/images/youtube2.png" alt="Youtube" class="social-icon"> -->
 							</p>
 						</div>
 					</div>
 					<!-- SOCIAL -->
 
 					<!-- SEND MSG -->
-					<div class="col-lg-6">
-						<div class="connect txt-bl">
-							<h3>SEND US A MESSAGE</h3>
+					<div class="col-lg-6 connect-mg-btm">
+						<div class="connect connect-ht txt-bl">
+							<h4>SEND US A MESSAGE</h4>
 
 							<form>
-								<div class="form-group">
+								<div class="form-group form-mg connect-text">
 									<label for="name">Name: </label>
-									<input id="name" class="form-control" type="text" placeholder="Your Name">
+									<input id="name" class="form-control form-control-sm" type="text" placeholder="Your Name">
 								</div>
 
-								<div class="form-group">
+								<div class="form-group form-mg connect-text">
 									<label for="email">Email Adress: </label>
-									<input id="email" class="form-control" type="email" placeholder="Your Email">
+									<input id="email" class="form-control form-control-sm" type="email" placeholder="Your Email">
 								</div>
 
-								<div class="form-group">
+								<div class="form-group form-mg connect-text">
 									<label for="contact">Contact No.: </label>
-									<input id="contact" class="form-control" type="text" placeholder="Your Mobile/Landline">
+									<input id="contact" class="form-control form-control-sm" type="text" placeholder="Your Mobile/Landline">
 								</div>
 
-								<div class="form-group">
+								<div class="form-group form-mg connect-text">
 									<label for="message">Message: </label>
-									<textarea id="message" class="form-control" placeholder="Your Message"></textarea>
+									<textarea id="message" class="form-control form-control-sm" placeholder="Your Message"></textarea>
 								</div>
 
-								<button class="btn btn-primary form-control">Submit</button>
+								<button class="btn btn-primary form-control mt-1">Submit</button>
 							</form>
 
 						</div>
@@ -116,10 +147,11 @@
 					<!-- SEND MSG -->
 
 					<!-- FIND US -->
-					<div class="col-lg-6">
-						<div class="connect txt-bl">
-							<h3>FIND US</h3>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15447.2685951345!2d121.0187646!3d14.5524467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xecdfb39bc33987ad!2sAsian+Institute+of+Management!5e0!3m2!1sfil!2sph!4v1542701175648" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="col-lg-6 connect-mg-btm">
+						<div class="connect connect-ht txt-bl">
+							<h4>FIND US</h4>
+							<!-- <small>123 Paseo de Roxas, Legazpi Village, Makati City</small> -->
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15447.2685951345!2d121.0187646!3d14.5524467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xecdfb39bc33987ad!2sAsian+Institute+of+Management!5e0!3m2!1sfil!2sph!4v1542701175648" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 					</div>
 					<!-- FIND US -->
@@ -130,12 +162,14 @@
 		</main>
 		<!-- end main row -->
 
+	</div> <!-- end container -->
+
+
+	<div>
 		<footer class="footer bg-success">
 			<p class="text-right mb-0 p-2 footertxt">&copy; RAD Wellness 2018, All rights reserved.</p>
 		</footer>
-
-	</div> <!-- end container -->
-
+	</div>
 
 
 	<!-- Optional JavaScript -->
@@ -143,5 +177,24 @@
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		        document.getElementById("myBtn").style.display = "block";
+		    } else {
+		        document.getElementById("myBtn").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0;
+		    document.documentElement.scrollTop = 0;
+		}
+	</script>
 </body>
 </html>

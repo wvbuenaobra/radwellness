@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-	<title>RADify Wellness - Welcome!</title>
+	<title>RAD Wellness - Welcome!</title>
 
 	<!-- fontawesome icons -->
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- animate.css -->
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.css"> -->
@@ -25,32 +25,58 @@
 	<!-- fav icon -->
 	<link rel="icon" type="image/gif/png" href="assets/images/letter.jpg">
 </head>
-<body>
+<body id="if-fixed">
+
+	<!-- Nav for Mobile -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-success" id="nav-mbl">
+		<a class="navbar-brand" href="home.html">
+			<i class="fas fa-circle fa-xs"></i> RAD Wellness
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navbar-nav" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="programs.html">Programs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Nav for Mobile -->
+
 	<div class="container">
 		
+		<!-- Nav for Desktop -->
 		<!-- start header row -->
-		<nav class="row header">
+		<nav class="row header" id="nav-lg">
 			<div class="navheader col-lg-12">
-				<!-- <button type="button" class="btn btn-outline-light btn-sm mx-2">HOME</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">WHO WE ARE</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">WHAT WE DO</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">PROGRAMS</button>
-				<button type="button" class="btn btn-outline-light btn-sm">CONTACT US</button> -->
 				<a href="home.html" class="navlinks">ABOUT US</a>
-				<!-- <a href="#" class="navlinks">WHO WE ARE</a>
-				<a href="#" class="navlinks">WHAT WE DO</a> -->
 				<a href="programs.html" class="navlinks">PROGRAMS</a>
 				<a href="gallery.html" class="navlinks">GALLERY</a>
 				<a href="contact.html" class="navlinks">CONTACT US</a>
 			</div>
 		</nav> <!-- end header row -->
+		<!-- Nav for Desktop -->
+
 
 		<!-- start main row -->
 		<main class="row main">
 			
 			<!-- left side -->
 			<div class="landingleft col-lg-6">
-				<!-- <h1 class="radifylanding mb-3 text-center">RADify Wellness</h1> -->
+				<!-- <h1 class="radifylanding mb-3 text-center">RAD Wellness</h1> -->
 				<p class="text-center"><img id="idrad" src="assets/images/radify-logo.jpg"></p>
 				<h3 class="mb-4 text-center">Bringing mental health awareness to your organization, for a more resilient and productive workforce.</h3>
 				<p class="text-center"><a href="home.html"><button type="button" class="btn btn-success">Tell Me More</button></a></p>

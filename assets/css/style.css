@@ -68,6 +68,7 @@ html {
 
 .main {
 	min-height: 550px;
+	/*min-height: 500px;*/
 	/*border: 3px solid yellow;*/
 }
 
@@ -114,7 +115,7 @@ html {
 .card-tes {
 	height: 100%;
 	background-color: #669999;
-	border: 2px outset #f2f2f2;
+	border: 3px outset #f2f2f2;
 }
 
 #client-pos {
@@ -145,10 +146,6 @@ html {
 	float: left;
 }
 
-.bioholder {
-
-}
-
 .pic-who {
 	height: 300px;
 	width: 250px;
@@ -160,14 +157,35 @@ html {
 	background-color: rgba(233, 236, 239, 0.9);
 	border-radius: 10px;
 	padding:15px;
-	min-height: 130px;
+	min-height: 120px;
+}
+
+.connect-ht {
+	min-height: 390px;
+}
+
+.connect-text {
+	font-size: 0.85em;
 }
 
 .social-icon {
-	height: 43px;
+	height: 38px;
 	/*width: 45px;*/
 	width: auto;
 	margin: 0 10px;
+}
+
+.gallery {
+	/*background-color: rgba(233, 236, 239, 0.9);*/
+	background-color: white;
+	/*border-radius: 10px;*/
+	padding: 20px;
+	min-height: 120px;
+}
+
+.carousel-width {
+	width: 70%;
+	margin: 0 auto;
 }
 
 #carouselExampleIndicators {
@@ -179,9 +197,22 @@ html {
 	max-height: 60vh;
 }
 
+#carouselExampleIndicators-2 {
+	height: 60vh;
+}
+
+#carouselExampleIndicators-2 img {
+	height: 60vh;
+	max-height: 60vh;
+}
+
 .gal-caption {
 	font-size: 0.9em;
 }
+
+.customfont {
+	font-family: 'Permanent Marker', cursive;
+}	
 
 /*fade-overlay start****************/
 .fade-container {
@@ -250,15 +281,6 @@ html {
 	line-height: 2;
 }
 
-/*.prog-title {
-	width: 50%;
-	margin: 0 auto;
-	border: 0px solid #f2f2f2;
-	padding: 20px 40px;
-	border-radius: 10px;
-	background-color: rgb(92,184,92);
-}*/
-
 .sub-prog {
 	color: #f2f2f2;
 }
@@ -274,4 +296,213 @@ html {
 
 .btncontact {
 	width: 300px;
+}
+
+.form-mg {
+  	margin-bottom: 0.3rem;
+}
+
+/*back to top*/
+
+/*back to top*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+/* Mobile */
+@media only screen and (max-width: 400px) {
+	#if-fixed {
+		background-attachment: fixed; /*to achieve parallax effect*/
+	}
+
+	#nav-lg {
+		display: none;
+	}
+
+	.formholder {
+		margin-bottom: 2em;
+	}
+
+	.jumbotron-section {
+		margin: 0 auto;
+		width: 90%;
+		margin-top: 2em;
+	}
+
+	.reframe-tag {
+		font-size: 3em;
+	}
+
+	.jumbo-lead {
+		font-size: 0.9em;
+	}
+
+	.txt-wht-center {
+		color: #f2f2f2;
+		text-align: center;
+	}
+
+	.picholder {
+		float: none;
+		text-align: center;
+	}
+
+	.card-text {
+		font-size: 0.8em;
+	}
+
+	.makewht {
+		color: #f2f2f2;
+	}
+
+	.hashtag {
+		font-size: 19px;
+	}
+
+	.fade-container {
+	  width: 280px;
+	}
+
+	.fade-image {
+	  width: 280px;
+	  height: 400px;
+	}
+
+	.fade-overlay {
+	  width: 280px;
+	  height: 400px;
+	}
+
+	.sub-prog-text {
+		font-size: 1.15em;
+	}
+
+	.btncontact {
+		width: 250px;
+	}
+
+	.connect-mg-top {
+		margin-top: 20px;
+	}
+
+	.connect-mg-btm {
+		margin-bottom: 20px;
+	}
+
+	.carousel-width {
+		width: 100%;
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	#if-fixed {
+		background-attachment: fixed; /*to achieve parallax effect*/
+	}
+
+	#nav-lg {
+		display: none;
+	}
+
+	.formholder {
+		margin-bottom: 2em;
+	}
+
+	.jumbotron-section {
+		margin: 0 auto;
+		width: 90%;
+		margin-top: 2em;
+	}
+
+	.jumbo-lead {
+		font-size: 1em;
+	}
+
+	.txt-wht-center {
+		color: #f2f2f2;
+		text-align: center;
+	}
+
+	.picholder {
+		float: none;
+		text-align: center;
+	}
+
+	.card-text {
+		font-size: 0.8em;
+	}
+
+	.makewht {
+		color: #f2f2f2;
+	}
+
+	.add-padding1 {
+		padding-top: 45px;
+	}
+
+	.add-padding2 {
+		padding-top: 25px;
+	}
+
+	.connect-mg-top {
+		margin-top: 20px;
+	}
+
+	.connect-mg-btm {
+		margin-bottom: 20px;
+	}
+
+	.carousel-width {
+		width: 100%;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 961px) {
+	#nav-mbl {
+		display: none;
+	}
+
+	.jumbo-lead {
+		text-align: justify;
+	}
+
+	.btnsize {
+		width: 345px;
+		font-size: 1.25em;
+	}
+
+	.add-margin {
+		margin-top: 35px;
+	}
+
+
+
+	footer {
+		max-width: 960px;
+		/*so that the layout wont expand extensively in very wide displays*/
+		/*width: 100%;*/
+		margin: 0 auto;
+		/*position: absolute;*/
+		/*bottom: 0;*/
+		/*border: 1px solid white;*/
+	}
 }

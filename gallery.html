@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-	<title>RADify Wellness - Gallery</title>
+	<title>RAD Wellness - Gallery</title>
 
 	<!-- fontawesome icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -21,29 +21,57 @@
 
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
 	<!-- fav icon -->
 	<link rel="icon" type="image/gif/png" href="assets/images/letter.jpg">
 </head>
-<body>
+<body id="if-fixed">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+	<!-- Nav for Mobile -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-success" id="nav-mbl">
+		<a class="navbar-brand" href="home.html">
+			<i class="fas fa-circle fa-xs"></i> RAD Wellness
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navbar-nav" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="programs.html">Programs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Nav for Mobile -->
+
 	<div class="container">
 		
+		<!-- Nav for Desktop -->
 		<!-- start header row -->
-		<nav class="row header">
+		<nav class="row header" id="nav-lg">
 			<div class="navheader col-lg-12">
-				<!-- <button type="button" class="btn btn-outline-light btn-sm mx-2">HOME</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">WHO WE ARE</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">WHAT WE DO</button>
-				<button type="button" class="btn btn-outline-light btn-sm mx-2">PROGRAMS</button>
-				<button type="button" class="btn btn-outline-light btn-sm">CONTACT US</button> -->
 				<a href="home.html" class="navlinks">ABOUT US</a>
-				<!-- <a href="#" class="navlinks">WHO WE ARE</a>
-				<a href="#" class="navlinks">WHAT WE DO</a> -->
 				<a href="programs.html" class="navlinks">PROGRAMS</a>
 				<a href="gallery.html" class="navlinks nav-active">GALLERY</a>
 				<a href="contact.html" class="navlinks">CONTACT US</a>
 			</div>
 		</nav> <!-- end header row -->
+		<!-- Nav for Desktop -->
 
 		<!-- start main row -->
 		<main class="row main">
@@ -53,73 +81,151 @@
 
 					<!-- GALLERY -->
 					<div class="col-lg-12">
-						<div class="connect txt-bl">
-							<h3 class="pb-1">GALLERY</h3>
+						<div class="gallery txt-bl mb-5 connect-mg-top text-center carousel-width">
+							<!-- <h3 class="pb-1">Our Programs</h3> -->
 								
-								<!-- CAROUSEL START -->
-								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-								  	<ol class="carousel-indicators">
-								    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-								    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								    	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-								    	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-								    	<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-								    	<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-								  	</ol>
+							<!-- CAROUSEL START -->
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+							  	<ol class="carousel-indicators">
+							    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							    	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							    	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							    	<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							    	<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+							  	</ol>
 
-								  	<div class="carousel-inner">
-								    	<div class="carousel-item active">
-								      		<img class="d-block w-100" src="assets/images/gallery1.jpeg" alt="First slide">
-								      		<div class="carousel-caption d-none d-md-block">
-											    <p class="gal-caption"><mark>Participants from the Asian Institute of Management</mark></p>
-											</div>
-								    	</div>
-								    	<div class="carousel-item">
-								      		<img class="d-block w-100" src="assets/images/gallery2.jpg" alt="Second slide">
-								      		<div class="carousel-caption d-none d-md-block">
-											    <p class="gal-caption"><mark>Open Forum / Q&A</mark></p>
-											</div>
-								    	</div>
-								    	<div class="carousel-item">
-								      		<img class="d-block w-100" src="assets/images/gallery3.jpg" alt="Third slide">
-								      		<div class="carousel-caption d-none d-md-block">
-											    <p class="gal-caption"><mark>Class Sharing / Feedback</mark></p>
-											</div>
-								    	</div>
-								    	<div class="carousel-item">
-								      		<img class="d-block w-100" src="assets/images/gallery4.jpeg" alt="Fourth slide">
-								      		<div class="carousel-caption d-none d-md-block">
-											    <p class="gal-caption"><mark>Teamwork exercises</mark></p>
-											</div>
-								    	</div>
-								    	<div class="carousel-item">
-								      		<img class="d-block w-100" src="assets/images/gallery5.jpeg" alt="Fifth slide">
-								      		<div class="carousel-caption d-none d-md-block">
-											    <p class="gal-caption"><mark>Teamwork exercises</mark></p>
-											</div>
-								    	</div>
-								    	<div class="carousel-item">
-								      		<img class="d-block w-100" src="assets/images/gallery6.jpeg" alt="Sixth slide">
-								      		<div class="carousel-caption d-none d-md-block">
-											    <p class="gal-caption"><mark>Making friends through the journey</mark></p>
-											</div>
-								    	</div>
-									</div>
-
-									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-								  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								    	<span class="sr-only">Previous</span>
-									</a>
-									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-								    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								    	<span class="sr-only">Next</span>
-									</a>
+							  	<div class="carousel-inner">
+							    	<div class="carousel-item active">
+							      		<img class="d-block w-100" src="assets/images/gallery1.jpeg" alt="First slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Participants from the Asian Institute of Management</mark></p>
+										</div>
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img class="d-block w-100" src="assets/images/gallery2.jpg" alt="Second slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Open Forum / Q&A</mark></p>
+										</div>
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img class="d-block w-100" src="assets/images/gallery3.jpg" alt="Third slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Class Sharing / Feedback</mark></p>
+										</div>
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img class="d-block w-100" src="assets/images/gallery4.jpeg" alt="Fourth slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Teamwork exercises</mark></p>
+										</div>
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img class="d-block w-100" src="assets/images/gallery5.jpeg" alt="Fifth slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Teamwork exercises</mark></p>
+										</div>
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img class="d-block w-100" src="assets/images/gallery6.jpeg" alt="Sixth slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Making friends through the journey</mark></p>
+										</div>
+							    	</div>
 								</div>
-								<!-- CAROUSEL END -->
+
+								<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    	<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    	<span class="sr-only">Next</span>
+								</a>
+							</div>
+							<!-- CAROUSEL END -->
+
+							<h3 class="customfont pt-3">During Training</h3>
 
 						</div>
 					</div> <!-- end of col -->
 					<!-- GALLERY -->
+
+
+
+
+					<!-- GALLERY 2 -->
+					<div class="col-lg-12">
+						<div class="gallery txt-bl connect-mg-top text-center carousel-width mb-5">
+							<!-- <h3 class="pb-1">GALLERY</h3> -->
+								
+							<!-- CAROUSEL START -->
+							<div id="carouselExampleIndicators-2" class="carousel slide" data-ride="carousel">
+							  	<ol class="carousel-indicators">
+							    	<li data-target="#carouselExampleIndicators-2" data-slide-to="0" class="active"></li>
+							    	<li data-target="#carouselExampleIndicators-2" data-slide-to="1"></li>
+							    	<li data-target="#carouselExampleIndicators-2" data-slide-to="2"></li>
+							    	<li data-target="#carouselExampleIndicators-2" data-slide-to="3"></li>
+							    	<li data-target="#carouselExampleIndicators-2" data-slide-to="4"></li>
+							    	<li data-target="#carouselExampleIndicators-2" data-slide-to="5"></li>
+							  	</ol>
+
+							  	<div class="carousel-inner">
+							    	<div class="carousel-item active">
+							      		<img class="d-block w-100" src="assets/images/graduate1.jpeg" alt="First slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Mark, Pasig</mark></p>
+										</div>
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img class="d-block w-100" src="assets/images/graduate2.jpeg" alt="Second slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Minda, Bulacan</mark></p>
+										</div>
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img class="d-block w-100" src="assets/images/graduate3.jpeg" alt="Third slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Arthur, Naga</mark></p>
+										</div>
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img class="d-block w-100" src="assets/images/graduate4.jpeg" alt="Fourth slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Jenny, Cavite</mark></p>
+										</div>
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img class="d-block w-100" src="assets/images/graduate5.jpeg" alt="Fifth slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Arnold, Malabon</mark></p>
+										</div>
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img class="d-block w-100" src="assets/images/graduate6.jpeg" alt="Sixth slide">
+							      		<div class="carousel-caption d-none d-md-block">
+										    <p class="gal-caption"><mark>Doris, Cebu</mark></p>
+										</div>
+							    	</div>
+								</div>
+
+								<a class="carousel-control-prev" href="#carouselExampleIndicators-2" role="button" data-slide="prev">
+							  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    	<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndicators-2" role="button" data-slide="next">
+							    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    	<span class="sr-only">Next</span>
+								</a>
+							</div>
+							<!-- CAROUSEL END -->
+
+							<h3 class="customfont pt-3">Our Graduates</h3>
+
+						</div>
+					</div> <!-- end of col -->
+					<!-- GALLERY 2 -->
+
 
 				</div>
 			</div>
@@ -127,12 +233,14 @@
 		</main>
 		<!-- end main row -->
 
+	</div> <!-- end container -->
+
+
+	<div>
 		<footer class="footer bg-success">
 			<p class="text-right mb-0 p-2 footertxt">&copy; RAD Wellness 2018, All rights reserved.</p>
 		</footer>
-
-	</div> <!-- end container -->
-
+	</div>
 
 
 	<!-- Optional JavaScript -->
@@ -140,5 +248,24 @@
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		        document.getElementById("myBtn").style.display = "block";
+		    } else {
+		        document.getElementById("myBtn").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0;
+		    document.documentElement.scrollTop = 0;
+		}
+	</script>
 </body>
 </html>
