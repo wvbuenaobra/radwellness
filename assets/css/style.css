@@ -7,7 +7,7 @@
 
 /*css declarations*/
 body {
-	background-image: url(../images/bg.jpeg);
+	background-image: url(../images/bg-hires.jpg);
 	background-position: center center;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -27,6 +27,10 @@ html {
 
 .txt-bl {
 	color: black;
+}
+
+.off-black {
+	color: #333;
 }
 
 [class*="col-"] {
@@ -114,20 +118,21 @@ html {
 
 .card-tes {
 	height: 100%;
-	background-color: #669999;
+	/*background-color: #669999;*/
+	background-color: #94b8b8;
 	border: 3px outset #f2f2f2;
 }
 
 #client-pos {
 	color: black;
 	font-size: 12px;
-	float: left;
+	/*float: left;*/
 }
 
 #client-tes {
 	color: black;
 	font-size: 11px;
-	float: right;
+	/*float: right;*/
 }
 
 #client-pic {
@@ -135,11 +140,12 @@ html {
 	width: 60px;
 	/*border: 1px solid #333;*/
 	border: 1px solid #f2f2f2;
-	/*background-color: #f2f2f2;*/
-	border-radius: 2px;
+	background-color: #f2f2f2;
+	/*border-radius: 2px;*/
+	border-radius: 50%;
 	margin-right: 5px;
-	padding: 3px;
-	float: left;
+	padding: 1px;
+	/*float: left;*/
 }
 
 .picholder {
@@ -245,6 +251,7 @@ html {
   /*background-color: #008CBA;*/
   /*background-color: rgba(0, 140, 186, 0.8);*/
   background-color: rgba(102, 153, 153, 0.8);
+  /*background-color: rgba(148, 184, 184, 0.8);*/
 }
 
 .fade-container:hover .fade-overlay {
@@ -266,7 +273,8 @@ html {
 
 .makeblue {
 	/*color: #008CBA;*/
-	color: #669999;
+	/*color: #669999;*/
+	color: #94b8b8;
 }
 
 .makegreen {
@@ -302,10 +310,6 @@ html {
   	margin-bottom: 0.3rem;
 }
 
-/*back to top*/
-
-/*back to top*/
-
 #myBtn {
   display: none;
   position: fixed;
@@ -320,7 +324,7 @@ html {
   cursor: pointer;
   padding: 10px;
   border-radius: 4px;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 
@@ -356,7 +360,7 @@ html {
 	}
 
 	.txt-wht-center {
-		color: #f2f2f2;
+		/*color: #f2f2f2;*/
 		text-align: center;
 	}
 
@@ -410,6 +414,44 @@ html {
 	.carousel-width {
 		width: 100%;
 	}
+
+	#carouselExampleIndicators {
+		height: 30vh;
+	}
+
+	#carouselExampleIndicators img {
+		height: 30vh;
+		max-height: 30vh;
+	}
+
+	#carouselExampleIndicators-2 {
+		height: 30vh;
+	}
+
+	#carouselExampleIndicators-2 img {
+		height: 30vh;
+		max-height: 30vh;
+	}
+
+	.hashtag {
+		color: black;
+	}
+
+	#client-tes {
+		font-size: 12px;
+	}
+
+	#landingform {
+		background-color: rgba(233, 236, 239, 0.3);
+	}
+
+	.txt-bl {
+		color: #333;
+	}
+
+	.mobile-no-mg {
+		margin-bottom: 0;
+	}
 }
 
 /* Tablet */
@@ -437,7 +479,7 @@ html {
 	}
 
 	.txt-wht-center {
-		color: #f2f2f2;
+		/*color: #f2f2f2;*/
 		text-align: center;
 	}
 
@@ -472,6 +514,44 @@ html {
 
 	.carousel-width {
 		width: 100%;
+	}
+
+	#carouselExampleIndicators {
+		height: 30vh;
+	}
+
+	#carouselExampleIndicators img {
+		height: 30vh;
+		max-height: 30vh;
+	}
+
+	#carouselExampleIndicators-2 {
+		height: 30vh;
+	}
+
+	#carouselExampleIndicators-2 img {
+		height: 30vh;
+		max-height: 30vh;
+	}
+
+	.hashtag {
+		color: black;
+	}
+
+	#client-tes {
+		font-size: 12px;
+	}
+
+	#landingform {
+		background-color: rgba(233, 236, 239, 0.3);
+	}
+
+	.txt-bl {
+		color: #333;
+	}
+
+	.mobile-no-mg {
+		margin-bottom: 0;
 	}
 }
 
