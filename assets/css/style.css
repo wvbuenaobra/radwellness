@@ -87,8 +87,10 @@ html {
 
 #idrad {
 	height: 200px;
-	width: 215px;
+	/*width: 215px;*/
+	width: 210px;
 	border-radius: 50%; /*makes the photo round*/
+	background-color: white;
 }
 
 #radlogolanding {
