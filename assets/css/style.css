@@ -334,7 +334,8 @@ html {
 /*MEDIA QUERIES*/
 
 /* Mobile */
-@media only screen and (max-width: 400px) {
+/*@media only screen and (max-width: 400px) {*/
+@media only screen and (max-width: 425px) {
 	#if-fixed {
 		background-attachment: fixed; /*to achieve parallax effect*/
 	}
@@ -457,7 +458,8 @@ html {
 }
 
 /* Tablet */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+/*@media only screen and (min-width: 401px) and (max-width: 960px) {*/
+@media only screen and (min-width: 426px) and (max-width: 960px) {
 	#if-fixed {
 		background-attachment: fixed; /*to achieve parallax effect*/
 	}
@@ -468,6 +470,8 @@ html {
 
 	.formholder {
 		margin-bottom: 2em;
+		padding-left: 2em;
+		padding-right: 2em;
 	}
 
 	.jumbotron-section {
@@ -486,8 +490,8 @@ html {
 	}
 
 	.picholder {
-		float: none;
-		text-align: center;
+		/*float: none;
+		text-align: center;*/
 	}
 
 	.card-text {
@@ -507,7 +511,8 @@ html {
 	}
 
 	.connect-mg-top {
-		margin-top: 20px;
+		/*margin-top: 20px;*/
+		margin-top: 40px;
 	}
 
 	.connect-mg-btm {
@@ -537,7 +542,8 @@ html {
 	}
 
 	.hashtag {
-		color: black;
+		/*color: black;*/
+		color: #fff;
 	}
 
 	#client-tes {
@@ -554,6 +560,17 @@ html {
 
 	.mobile-no-mg {
 		margin-bottom: 0;
+	}
+
+	.landingleft {
+		padding-top: 20px;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.shrink-tab {
+		margin-left: 2em;
+		margin-right: 2em;
 	}
 }
 
